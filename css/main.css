@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-optical-sizing: auto;
+    font-size: 14px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: hsl(30, 38%, 92%);
+}
+
+main {
+    padding: 20px;
+}
+
+.perfume-container {
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+}
+
+.perfume {
+    background: url('../images/image-product-mobile.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 240px;
+    width: 350px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    /*figure out how to round the top two corners only. i did with border top left and right */
+    margin-bottom: 5px;
+}
+
+.perfume-info {
+    padding: 22px;
+}
+
+h2,
+.description,
+.original {
+    color: hsl(228, 12%, 48%);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+h1 {
+    font-family: 'Fraunces';
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.description {
+    margin-bottom: 30px;
+}
+
+.price {
+    color: hsl(158, 36%, 37%);
+    font-size: 2rem;
+    font-family: 'Fraunces';
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.original {
+    margin-left: 15px;
+    /* put in strikethrough */
+    text-decoration: line-through;
+}
+
+button {
+    background-color: hsl(158, 36%, 37%);
+    border-style: none;
+    color: hsl(0, 0%, 100%);
+    width: 100%;
+    height: 48px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1a4031;
+}
+
+@media (min-width: 1200px) {
+    .perfume-container {
+        display: flex;
+        width: 600px;
+    }
+
+
+    .perfume {
+        background: url('../images/image-product-desktop.jpg');
+        /*figure out how to link images in css */
+        background-position: center;
+        background-size: cover;
+        width: 300px;
+        height: 450px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 10px;
+        flex-shrink: 0; /*image is squished in?? is flex-shrink always set to 1?*/
+    }
+
+    .perfume-info {
+        margin: 0 20px; /*fiddle with this so tehre's no white space on bottom */
+    }
+
+    h2 {
+        margin: 5px 0px;
+        padding-bottom: 30px;
+    }
+}
+
+/* some empty space on the bottom */
