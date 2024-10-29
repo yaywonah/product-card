@@ -48,6 +48,7 @@ Users should be able to:
 - how to switch between mobile image and desktop image
 - learned how to link images from CSS instead of through HTML
 - learned how to work with the border-radius property to round only two corners at a time
+- learned how to put a strikethrough in css using the text-decoration property
 
 ## Author
 
